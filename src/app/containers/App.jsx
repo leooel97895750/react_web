@@ -4,7 +4,7 @@ class App extends Component {
   render(){
     return(
       <div>
-        just for commit~
+        don't know how to start react~ oh~ headache
       </div>
     )
   }
