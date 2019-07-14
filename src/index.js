@@ -1,4 +1,5 @@
 import React from 'react';
+//react-dom是react與真實DOM的溝通模組
 import { render } from 'react-dom';
 
 import App from './app/containers/App.jsx';
