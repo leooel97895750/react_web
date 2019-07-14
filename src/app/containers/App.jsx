@@ -7,7 +7,7 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      total: 0
+      total: 1
     }
   }
   //生命週期方法
