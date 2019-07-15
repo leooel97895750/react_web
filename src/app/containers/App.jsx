@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import CalcDisplay from '../components/CalcDisplay';
 import CalcButton from '../components/CalcButton';
+//常數宣告
 const buttonData = [
   '7', '8', '9', '+',
   '4', '5', '6', '-',
