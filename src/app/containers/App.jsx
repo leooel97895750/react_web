@@ -29,7 +29,7 @@ class App extends Component {
     this.setState({displayValue:value})
   }
   
-  //渲染方法 - 只能有一個根元
+  //渲染方法 - 只能有一個根元素
   render(){
     return(
       <div className="app-layout">
