@@ -31,7 +31,7 @@ export class GoogleMaps extends React.Component {
              lat: 24.5,
              lng: 121
            }}
-           zoom={16.75}
+           zoom={10}
            onClick={this.onMapClicked}>
         <Marker onClick={this.onMarkerClick}
                 name={'descripton'}
