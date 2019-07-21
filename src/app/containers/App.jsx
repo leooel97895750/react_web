@@ -1,8 +1,9 @@
 //匯入react模組
-import React, { Component } from 'react';
-import GoogleMaps from '../components/GoogleMaps'
+import React from 'react';
+//import GoogleMaps from '../components/GoogleMaps'
+import Header from '../components/Header'
 
-class App extends Component {
+class App extends React.Component {
   //建構式 - props屬性、state狀態
   //props是外部傳入的值，只能讀不能寫。state是私有值，用setState來改值
   constructor(props){
@@ -23,7 +24,7 @@ class App extends Component {
   render(){
     return(
       <div>
-        <GoogleMaps />
+        <Header />
       </div>
     )
   }
