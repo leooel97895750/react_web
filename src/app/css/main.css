@@ -3,12 +3,21 @@ body{
 }
 header{
     position: relative;
-    width:100%;
+    width:calc(100% - 20px);
     height:150px;
-    margin: 0px;
-    margin-bottom:10px;
+    margin: 10px;
+    margin-top:0px;
     overflow: hidden;
+    box-shadow:0px 0px 6px black;
 }
+@media screen and (max-width: 600px) {
+    header{
+      height:80px;
+      margin: 5px;
+      margin-top: 0px;
+      width:calc(100% - 10px);
+    }
+  }
 #pic1{
     position: absolute;
     bottom:0px; 
