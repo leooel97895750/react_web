@@ -1,8 +1,8 @@
 //匯入react模組
 import React from 'react';
-//import GoogleMaps from '../components/GoogleMaps'
 import Header from '../components/Header'
-import { GoogleMaps } from '../components/GoogleMaps';
+import GoogleMaps from '../components/GoogleMaps';
+import Footer from '../components/Footer'
 
 class App extends React.Component {
   //建構式 - props屬性、state狀態
@@ -26,7 +26,10 @@ class App extends React.Component {
     return(
       <div>
         <Header />
-        <GoogleMaps />
+        <div id="map">
+          <GoogleMaps />
+        </div>
+        <Footer />
       </div>
     )
   }

@@ -1,12 +1,18 @@
+/*
+首頁的Google Maps導航
+*/
 import React from 'react';
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 
 export class GoogleMaps extends React.Component {
-  state = {
-    showingInfoWindow: false,
-    activeMarker: {},
-    selectedPlace: {},
-  };
+  constructor(props) {
+    super(props)
+    this.state = {
+      showingInfoWindow: false,
+      activeMarker: {},
+      selectedPlace: {},
+    };
+  } 
 
   onMarkerClick = (props, marker, e) =>
     this.setState({
