@@ -1,6 +1,7 @@
 //匯入react模組
 import React from 'react';
 import Header from '../components/Header'
+import Member from '../components/Member'
 import GoogleMaps from '../components/GoogleMaps';
 import Footer from '../components/Footer'
 
@@ -26,7 +27,8 @@ class App extends React.Component {
     return(
       <div>
         <Header />
-        <div id="map">
+        <Member />
+        <div className="map">
           <GoogleMaps />
         </div>
         <Footer />

@@ -3,6 +3,7 @@
 */
 import React from 'react'
 import '../css/main.css'
+import logo from '../img/paint.png'
 import p1 from '../img/p1.jpg'
 import p2 from '../img/p2.jpg'
 import p3 from '../img/p3.jpg'
@@ -66,16 +67,13 @@ class Header extends React.Component {
     }
 
     render() {
-        let dystyle1 = {
-            opacity: this.state.opacity1
-        }
-        let dystyle2 = {
-            opacity: 1
-        }
+        let dystyle1 = { opacity: this.state.opacity1 }
+        let dystyle2 = { opacity: 1 }
         return (
             <header>
                 <img id="pic1" style={dystyle1} alt="" src={picList1[this.state.picNum1]}></img>
                 <img id="pic2" style={dystyle2} alt="" src={picList2[this.state.picNum2]}></img>
+                <img className="logo" alt="" title="歡迎來到iDriver" src={logo}></img>
             </header>
         )
     }

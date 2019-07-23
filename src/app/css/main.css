@@ -18,6 +18,23 @@ header{
       width:calc(100% - 10px);
     }
 }
+.logo{
+    position: absolute;
+    top: -5px;
+    z-index: 3;
+    margin: 0px;
+    margin-left: 50px;
+    width:400px; 
+    height:calc(100% - 40px); 
+    opacity: 1;
+}
+@media screen and (max-width: 600px) {
+    .logo {
+        margin-left: 15px;
+        width:200px;
+        height:calc(100% - 15px); 
+    } 
+}
 #pic1{
     position: absolute;
     bottom:0px; 
@@ -34,7 +51,35 @@ header{
     max-height:auto; 
     z-index: 1;
 }
-#map{
+.member{
+    position: absolute;
+    top: 0px;
+    right:0px;
+    z-index: 4;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.member_img{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 6;
+}
+.member_menu{
+    position: absolute;
+    top: -5px;
+    right:-5px;
+    width:300px;
+    background-color: white;
+    box-shadow:0px 0px 6px black;
+    z-index: 5;
+}
+@media screen and (max-width: 600px) {
+    .member_menu {
+        width:200px;
+    } 
+}
+.map{
     position: relative;
     margin: 0px;
     margin-left: 10px;
@@ -45,7 +90,7 @@ header{
     box-shadow:0px 0px 6px black;
 }
 @media screen and (max-width: 600px) {
-    #map{
+    .map{
         margin: 0px;
         margin-left: 5px;
         margin-right: 5px;
