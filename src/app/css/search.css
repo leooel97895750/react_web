@@ -1,0 +1,35 @@
+.search{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(13, 143, 63);
+    width:300px;
+    height: 400px;
+}
+.toggle{
+    margin-top: 2px;
+    margin-left: 10px;
+    width: 100px;
+    height: 30px;
+}
+.input{
+    width: 220px;
+    height: 20px;
+    margin-left:10px;
+    margin-top: 5px;
+    font-family: '微軟正黑體';
+}
+.find{
+    position: relative;
+    top: 8px;
+    left: 3px;
+    width: 30px;
+    height: 30px;
+}
+.change{
+    position: relative;
+    top: -5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+}

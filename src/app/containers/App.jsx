@@ -2,7 +2,9 @@
 import React from 'react';
 import Header from '../components/Header'
 import Member from '../components/Member'
-import GoogleMaps from '../components/GoogleMaps';
+//import GoogleMaps from '../components/GoogleMaps';
+import ReactMaps from '../components/ReactMap'
+import Search from '../components/Search'
 import Footer from '../components/Footer'
 
 class App extends React.Component {
@@ -29,7 +31,8 @@ class App extends React.Component {
         <Header />
         <Member />
         <div className="map">
-          <GoogleMaps />
+          <ReactMaps />
+          <Search />
         </div>
         <Footer />
       </div>

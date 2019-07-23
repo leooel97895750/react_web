@@ -56,5 +56,6 @@ export class GoogleMaps extends React.Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyBCfynfSQU-J-AVUeW3IPRK79atoD2UtRE'
+  apiKey: 'AIzaSyBCfynfSQU-J-AVUeW3IPRK79atoD2UtRE',
+  language: 'chinese'
 })(GoogleMaps)

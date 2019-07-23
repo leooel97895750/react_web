@@ -1,6 +1,11 @@
 import React from 'react'
 import '../css/main.css'
 import member from '../img/member.png'
+import history from '../img/history.png'
+import contribution from '../img/contribution.png'
+import setting from '../img/setting.png'
+import information from '../img/information.png'
+import logout from '../img/logout.png'
 
 class Member extends React.Component {
     constructor(props) {
@@ -18,23 +23,26 @@ class Member extends React.Component {
         }
     }
     render() {
-        let style = {
-            width: '60px',
-            height: '60px'
-        }
         let menu = {
             display: this.state.menuDisplay,
         }
+        let img_style = {
+            width: '22px',
+            height: '22px',
+            marginLeft: '10px'
+        }
         return(
             <div className="member">
-                <img style={style} className="member_img" alt="會員功能" src={member} onClick={this.memberClick}></img>
+                <img className="member_img" alt="會員功能" src={member} onClick={this.memberClick}></img>
                 <div style={menu} className="member_menu">
                     <ul>
-                        <li>搜尋紀錄</li>
-                        <li>歷史貢獻</li>
-                        <li>主題設定</li>
-                        <li>提供意見</li>
-                        <li>帳號登出</li>
+                        <li><b>訪客</b></li>
+                        <hr />
+                        <li className="menu_button"><img style={img_style} alt="" src={history}></img> 搜尋紀錄</li>
+                        <li className="menu_button"><img style={img_style} alt="" src={contribution}></img> 歷史貢獻</li>
+                        <li className="menu_button"><img style={img_style} alt="" src={setting}></img> 主題設定</li>
+                        <li className="menu_button"><img style={img_style} alt="" src={information}></img> 提供意見</li>
+                        <li className="menu_button"><img style={img_style} alt="" src={logout}></img> 帳號登出</li>
                     </ul>
                 </div>
             </div>

@@ -4,7 +4,7 @@ body{
 header{
     position: relative;
     width:calc(100% - 20px);
-    height:150px;
+    height:120px;
     margin: 10px;
     margin-top:0px;
     overflow: hidden;
@@ -12,7 +12,7 @@ header{
 }
 @media screen and (max-width: 600px) {
     header{
-      height:80px;
+      height:60px;
       margin: 5px;
       margin-top: 0px;
       width:calc(100% - 10px);
@@ -25,14 +25,14 @@ header{
     margin: 0px;
     margin-left: 50px;
     width:400px; 
-    height:calc(100% - 40px); 
+    height:calc(100% - 10px); 
     opacity: 1;
 }
 @media screen and (max-width: 600px) {
     .logo {
         margin-left: 15px;
         width:200px;
-        height:calc(100% - 15px); 
+        height:calc(100% - 5px); 
     } 
 }
 #pic1{
@@ -61,23 +61,58 @@ header{
 }
 .member_img{
     position: absolute;
+    width: 60px;
+    height: 60px;
     top: 0px;
     right: 0px;
     z-index: 6;
+}
+@media screen and (max-width: 600px) {
+    .member_img {
+        width: 40px;
+        height: 40px;
+    } 
 }
 .member_menu{
     position: absolute;
     top: -5px;
     right:-5px;
-    width:300px;
+    width:250px;
     background-color: white;
     box-shadow:0px 0px 6px black;
     z-index: 5;
 }
 @media screen and (max-width: 600px) {
     .member_menu {
-        width:200px;
+        width:150px;
     } 
+}
+.member_menu ul{
+    margin: 0px;
+    padding: 0px;
+    margin: 20px;
+    list-style-type: none;
+    font-family: '微軟正黑體';
+}
+@media screen and (max-width: 600px) {
+    .member_menu ul{
+        margin: 10px;
+    }
+}
+.member_menu ul li{
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+}
+@media screen and (max-width: 600px) {
+    .member_menu ul li{
+        height: 40px;
+        line-height: 40px;
+        font-size: 15px;
+    }
+}
+.menu_button:hover{
+    background-color: #3bc073;
 }
 .map{
     position: relative;
@@ -121,6 +156,7 @@ footer{
 .footer_text{
     margin-top: 30px;
     width:calc(100% - 20px);
+    font-family: '微軟正黑體';
     text-align: center;
     color: white;
 }
